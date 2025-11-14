@@ -281,7 +281,7 @@
                                     <p><strong>The Problem:</strong> A hospitals quality team saw CHF readmissions spike but had no idea why. They were treating all patients the same and needed to find the highest-risk group.
                                     <br>
                                     <br>
-                                    <strong>My Solution:</strong> I used SQL to extract a cohort of all CHF patients from the MIMIC-III database. Then, in a Python Jupyter Notebook, I used Pandas and seaborn to conduct a root cause analysis. I investigated if creatinine was a key factor and disproved the hypthesis, finding that there was no significant difference in creatinine levels between the two groups.</p>
+                                    <strong>My Solution:</strong> I used SQL to extract a cohort of all CHF patients from the MIMIC-III database. Then, in a Python Jupyter Notebook, I used Pandas and seaborn to conduct a root cause analysis. I investigated if creatinine was a key factor and disproved the hypothesis, finding that there was no significant difference in creatinine levels between the two groups.</p>
                                     <ul class="list-inline">
                                         <li>
                                             <strong>Client:</strong>
@@ -324,7 +324,7 @@
                                     <p><strong>The Problem:</strong> All advanced clinical research relies on building an accurate patient cohort, a task that is slow, technical, and cant be done by clicking buttons on the user interface.
                                     <br>
                                     <br>
-                                    <strong>My Solution:</strong> I bypassed all user interface tools and wrote advanced SQL algorithms from scratch. First i wrote a query using 'ROW_NUMBER()' Window function to define a cohort for 'Type 2 Diabetes' from OMOP database. Second i wrote a characterization query to find their Top 10 comorbidities from the year prior to their diagnosis </p>
+                                    <strong>My Solution:</strong> I bypassed all user interface tools and wrote advanced SQL algorithms from scratch. First i wrote a query using 'ROW_NUMBER()' Window function to define a cohort for 'Type 2 Diabetes' from OMOP database. Second, I wrote a characterization query to find their Top 10 comorbidities from the year prior to their diagnosis </p>
                                     <ul class="list-inline">
                                         <li>
                                             <strong>Client:</strong>
@@ -338,7 +338,7 @@
                                     <h2 class="text-uppercase">Ad-hoc scenario</h2>
                                     <p class="item-intro text-muted">we want to know the top 10 most common comorbidities that our Type 2 diabetes patient have in their medical history</p>
                                     <img class="img-fluid d-block mx-auto" src="assets2/img/portfolio/OMOP.gif" alt="..." />
-                                    <p> Used CTE windows to acquire all patients with Type 2 diabetes and then within that, grouped them by additional sicknesses they have.</p>
+                                    <p> Used CTEs and Window Function to acquire all patients with Type 2 diabetes and then within that, grouped them by additional sicknesses they carry.</p>
                                     <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
                                         <i class="fas fa-xmark me-1"></i>
                                         Close Project
@@ -465,7 +465,7 @@
                                     <!-- Project details-->
                                     <h2 class="text-uppercase"> Question: Who are our Top 5 worst-offending payers, based on the total balance they still owe us? </h2>
                                     <img class="img-fluid d-block mx-auto" src="assets2/img/portfolio/adFinance.gif" alt="..." />
-                                    <p> The manager needs to know who to call first. I wrote a query that find the top 5 payers with the highest outstanding balance, identifying the biggest at-risk accounts.</p>
+                                    <p> The manager needs to know who to call first. I wrote a query that finds the top 5 payers with the highest outstanding balance, identifying the biggest at-risk accounts.</p>
                                     <br>
                                     <br>
                                 
@@ -480,7 +480,7 @@
                                     </ul>
                                     <h2 class="text-uppercase"> Question: Whats the #1 denial reason that is costing us the most money?</h2>
                                     <img class="img-fluid d-block mx-auto" src="assets2/img/portfolio/adFinance2.gif" alt="..." />
-                                    <p> to need to stop revenue leaks, you must find the source. I created a query that finds the single most costly denial reason, giving the AR team a clear target for process improvement and staff training. </p>
+                                    <p>To stop revenue leaks, you must find the source. I created a query that finds the single most costly denial reason, giving the AR team a clear target for process improvement and staff training. </p>
                                     <br>
                                     <br>
                                 
@@ -630,7 +630,7 @@
                                     <h2 class="text-uppercase"> Question: Labevents data is unreliable, can you check how many lab results are missing their valuenum(the actual number)?</h2>
 
                                     <img class="img-fluid d-block mx-auto" src="assets2/img/portfolio/ITDATA.gif" alt="..." />
-                                    <p> ill do a data integrity audit. This query will audit the database by finding and counting all the lab tests that were recorded without an actual result, identifying potential ETL failures or data entry errors</p>
+                                    <p> Ill do a data integrity audit. This query will audit the database by finding and counting all the lab tests that were recorded without an actual result, identifying potential ETL failures or data entry errors.</p>
                                     <ul class="list-inline">
                                         <li>
                                             <strong>Stakeholder:</strong>
